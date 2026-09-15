@@ -1,26 +1,28 @@
 #include <stdio.h>
-int main() {
-int n, i;
-printf("Enter a number: ");
-scanf("%d", &n);
-// Using while loop
-printf("\nMultiplication Table using while loop:\n");
-i = 1;
-while (i <= 10) {
-printf("%d x %d = %d\n", n, i, n * i);
-i++;
-}
-// Using do-while loop
-printf("\nMultiplication Table using do-while loop:\n");
-i = 1;
-do {
-printf("%d x %d = %d\n", n, i, n * i);
-i++;
-} while (i <= 10);
-// Using for loop
-printf("\nMultiplication Table using for loop:\n");
-for (i = 1; i <= 10; i++) {
-printf("%d x %d = %d\n", n, i, n * i);
-}
+int main() 
+{
+int a;
+float b;
+double c;
+char ch;
+char name[50];
+
+printf("Enter an integer: ");
+scanf("%d", &a);
+printf("Enter a float value: ");
+scanf("%f", &b);
+printf("Enter a double value: ");
+scanf("%lf", &c);
+printf("Enter a single character: ");
+scanf(" %c", &ch); 
+printf("Enter a string (name): ");
+scanf("%s", name); 
+
+
+printf("Integer entered : %d\n", a);
+printf("Float entered : %.2f\n", b);
+printf("Double entered : %.2lf\n", c);
+printf("Character entered : %c\n", ch);
+printf("String entered : %s\n", name);
 return 0;
 }
